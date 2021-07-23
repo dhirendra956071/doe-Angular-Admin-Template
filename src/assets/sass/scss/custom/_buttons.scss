@@ -1,0 +1,11 @@
+
+@each $color, $value in $theme-colors {
+	.btn-light-#{$color} {
+	  @include button-light-variant($value);
+	}
+  }
+
+
+.radius-30 {
+	border-radius: 30px !important;
+}

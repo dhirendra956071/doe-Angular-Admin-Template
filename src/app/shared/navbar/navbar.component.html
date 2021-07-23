@@ -1,0 +1,250 @@
+<!--Start topbar header-->
+<header class="topbar-nav">
+	<nav id="header-setting" class="navbar navbar-expand fixed-top navbar-light bg-light shadow-sm">
+		<ul class="navbar-nav mr-auto align-items-center">
+			<li class="nav-item">
+				<div class="nav-link toggle-menu"> <i (click)="toggleSidebar()" class="icon-menu fa fas fa-bars p-2 rounded waves-effect"></i>
+				</div>
+			</li>
+			<li class="nav-item d-none d-lg-block">
+				<form class="search-bar input-group-sm">
+					<input type="text" class="form-control" placeholder="Search..."> <a href="javascript:;"><i class="fa fas fa-search"></i></a>
+				</form>
+			</li>
+		</ul>
+		<ul class="navbar-nav align-items-center">
+			<li ngbDropdown class="nav-item dropdown-lg mr-1">
+				<a href="javascript:;" class="nav-link rounded waves-effect dropdown-toggle-nocaret" id="dropdownBasic1" ngbDropdownToggle> <i class="h4 mdi mdi-comment"></i><span class="badge badge-danger badge-up">2</span>
+				</a>
+				<div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu-right">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item border-0 d-flex align-items-center">
+							<div>Messages</div>
+							<div class="ml-auto">
+								<button type="button" class="btn btn-light btn-sm waves-effect mdi mdi-refresh mr-1"></button>
+							</div>
+							<div>
+								<button type="button" class="btn btn-link btn-sm waves-effect">View all</button>
+							</div>
+						</li>
+						<li class="list-group-item border-0">
+							<div class="input-group input-group-sm">
+								<input type="text" class="form-control" placeholder="Search Messages..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+							</div>
+						</li>
+						<div class="dropdown-container" style="height: 336px;" [perfectScrollbar]>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media">
+									<div class="avatar">
+										<img class="align-self-start mr-3" src="assets\images\avatars\avatar-2.png" alt="user avatar">
+									</div>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">Sara Jen</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p> <small>Yesterday, 8:30 AM</small>
+									</div>
+								</div>
+							</a>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media">
+									<div class="avatar">
+										<img class="align-self-start mr-3" src="assets\images\avatars\avatar-3.png" alt="user avatar">
+									</div>
+									<span class="badge badge-danger badge-up mr-3">unread</span>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">Dannish Josh</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p> <small>5/11/2018, 2:50 PM</small>
+									</div>
+								</div>
+							</a>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media">
+									<div class="avatar">
+										<img class="align-self-start mr-3" src="assets\images\avatars\avatar-1.png" alt="user avatar">
+									</div>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">Katrina Mccoy</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p> <small>Today, 4:10 PM</small>
+									</div>
+								</div>
+							</a>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media">
+									<div class="avatar">
+										<img class="align-self-start mr-3" src="assets\images\avatars\avatar-4.png" alt="user avatar">
+									</div>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">Alisha</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p> <small>Today, 4:10 PM</small>
+									</div>
+								</div>
+							</a>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media">
+									<div class="avatar">
+										<img class="align-self-start mr-3" src="assets\images\avatars\avatar-5.png" alt="user avatar">
+									</div>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">Eliyana</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p> <small>Today, 4:10 PM</small>
+									</div>
+								</div>
+							</a>
+							<a href="javaScript:;" id="messages" class="list-group-item list-group-item-action border-0 sr-only">
+								<div class="media">
+									<div class="avatar">
+										<img class="align-self-start mr-3" src="assets\images\avatars\avatar-6.png" alt="user avatar">
+									</div>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">Ena Devid</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p> <small>Today, 4:10 PM</small>
+									</div>
+								</div>
+							</a>
+						</div>
+						<a href="javaScript:;" class="list-group-item text-center">
+							<button type="button" (click)="loadMore();" class="btn btn-sm btn-light btn-block waves-effect">Load More...</button>
+						</a>
+					</ul>
+				</div>
+			</li>
+			<li class="nav-item dropdown-lg mr-1" ngbDropdown>
+				<a href="javascript:;" class="nav-link rounded waves-effect dropdown-toggle-nocaret" id="dropdownBasic2" ngbDropdownToggle> <i class="h4 mdi mdi-bell"></i><span class="badge badge-success badge-up">6</span>
+				</a>
+				<div ngbDropdownMenu aria-labelledby="dropdownBasic2" class="dropdown-menu dropdown-menu-right ">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item d-flex justify-content-between align-items-center border-0">Notifications
+							<button type="button" class="btn btn-link btn-sm waves-effect">Clear all</button>
+						</li>
+						<div class="dropdown-container" style="height: 300px;" [perfectScrollbar]>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media"> <i class="h2 mdi mdi-cart mr-3"></i>
+									<span class="badge badge-warning badge-up mr-3">new</span>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">New order recived</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p>
+										<small>1 min ago</small>
+									</div>
+								</div>
+							</a>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media"> <i class="mdi mdi-lock-check h2 mr-3"></i>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">Your item has shipped</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p>
+										<small>1 hours ago</small>
+									</div>
+								</div>
+							</a>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media"> <i class="mdi mdi-star h2 mr-3"></i>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">You have recived new rating</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p>
+										<small>2 hours ago</small>
+									</div>
+								</div>
+							</a>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media"> <i class="mdi mdi-tools h2 mr-3"></i>
+									<span class="badge badge-danger badge-up mr-3">importent</span>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">New Updates</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p>
+										<small>3 hours ago</small>
+									</div>
+								</div>
+							</a>
+						</div>
+						<a href="javaScript:;" class="list-group-item text-center">
+							<button type="button" class="btn btn-light btn-sm btn-block waves-effect">Load More...</button>
+						</a>
+					</ul>
+				</div>
+			</li>
+			<li class="nav-item language mr-1" ngbDropdown> 
+				<a href="javascript:;" class="nav-link rounded waves-effect dropdown-toggle-nocaret mr-1" id="dropdownBasic3" ngbDropdownToggle><i class="flag-icon flag-icon-gb"></i></a>
+				<div ngbDropdownMenu aria-labelledby="dropdownBasic3" class="dropdown-menu-right">
+					<a ngbDropdownItem href="#"> <i class="flag-icon flag-icon-gb mr-2"></i> English -</a>
+					<a ngbDropdownItem href="#"> <i class="flag-icon flag-icon-fr mr-2"></i> French</a>
+					<a ngbDropdownItem href="#"> <i class="flag-icon flag-icon-cn mr-2"></i> Chinese</a>
+					<a ngbDropdownItem href="#"> <i class="flag-icon flag-icon-de mr-2"></i> German</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown-lg mr-4" ngbDropdown>
+				<a href="javascript:;" class="nav-link rounded waves-effect dropdown-toggle-nocaret" id="dropdownBasic2" ngbDropdownToggle> <i class="h3 mdi mdi-cart"></i><span class="badge badge-warning badge-up">4</span>
+				</a>
+				<div ngbDropdownMenu aria-labelledby="dropdownBasic2" class="dropdown-menu dropdown-menu-right ">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item d-flex justify-content-between align-items-center border-0">Orders
+							<button type="button" class="btn btn-link btn-sm waves-effect">Clear all</button>
+						</li>
+						<div class="dropdown-container" style="height: 300px;" [perfectScrollbar]>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media product-img"> 
+									<img class="mr-3" src="assets\images\avatars\avatar-17.png" alt="product image">
+									<span class="badge badge-warning badge-up mr-3">new</span>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">New order recived</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p>
+										<small>1 min ago</small>
+									</div>
+								</div>
+							</a>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media product-img"> 
+									<img class="mr-3" src="assets\images\avatars\avatar-17.png" alt="product image">
+									<span class="badge badge-info badge-up mr-3">Ship Today</span>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">New order recived</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p>
+										<small>1 min ago</small>
+									</div>
+								</div>
+							</a>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media product-img"> 
+									<img class="mr-3" src="assets\images\avatars\avatar-17.png" alt="product image">
+									<span class="badge badge-success badge-up mr-3">successful</span>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">New order recived</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p>
+										<small>1 min ago</small>
+									</div>
+								</div>
+							</a>
+							<a href="javaScript:;" class="list-group-item list-group-item-action border-0">
+								<div class="media product-img"> 
+									<img class="mr-3" src="assets\images\avatars\avatar-17.png" alt="product image">
+									<span class="badge badge-danger badge-up mr-3">urgent</span>
+									<div class="media-body">
+										<h6 class="mt-0 msg-title">New order recived</h6>
+										<p class="msg-info">Lorem ipsum dolor sit amet...</p>
+										<small>1 min ago</small>
+									</div>
+								</div>
+							</a>
+						</div>
+						<a href="javaScript:;" class="list-group-item text-center">
+							<button type="button" class="btn btn-light btn-sm btn-block waves-effect">Load More...</button>
+						</a>
+					</ul>
+				</div>
+			</li>
+			<li ngbDropdown class="nav-item">
+				<a href="javascript:;" class="nav-link waves-effect d-flex align-items-center dropdown-toggle-nocaret" id="dropdownBasic4" ngbDropdownToggle> 
+					<div class="d-none d-lg-block pr-3">
+						<span>Jhon Doe</span>
+					</div>
+					<span class="user-profile"><img src="assets\images\avatars\avatar-17.png" alt="user avatar"></span>
+				</a>
+				<div ngbDropdownMenu aria-labelledby="dropdownBasic4" class="dropdown-menu-right">
+					<a ngbDropdownItem href="javaScript:;"><i class="mdi mdi-account-circle"></i> Profile <span class="badge badge-info">1</span></a>
+					<a ngbDropdownItem href="javaScript:;"><i class="mdi mdi-book-account"></i> Account</a>
+					<a ngbDropdownItem href="javaScript:;"><i class="mdi mdi-tools"></i> Setting <span class="badge badge-danger">1</span></a>
+					<a ngbDropdownItem href="javaScript:;"><i class="mdi mdi-logout"></i> Logout</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+</header>
+<!--End topbar header-->

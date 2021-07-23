@@ -1,0 +1,117 @@
+<!--breadcrumb-->
+<div class="page-breadcrumb d-none d-md-flex align-items-center">
+	<div>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			  <li class="breadcrumb-item"><a href="#" (click)="$event.preventDefault()">Home</a></li>
+			  <li class="breadcrumb-item"><a href="#" (click)="$event.preventDefault()">Components</a></li>
+			  <li class="breadcrumb-item active" aria-current="page">Progress Bars</li>
+			</ol>
+		</nav>
+	</div>
+	<div class="ml-auto">
+		<div class="btn-group" ngbDropdown>
+			<button type="button" class="btn btn-sm btn-primary waves-effect" id="dropdownBasic1" ngbDropdownToggle>Settings <span class="sr-only">Toggle Dropdown</span></button>
+			<div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu-right dropdown-menu-lg-left"> 
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+				<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+				<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+				<div class="dropdown-divider"></div> 
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Separated link</a>
+			</div>
+		</div>
+	</div>
+</div>
+<h4 class="mb-4">Progress Bars</h4>
+<!--end breadcrumb-->
+<div class="card radius-15">
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Basic progress bars</h4>
+		</div>
+		<hr/>
+		<div class="progress mb-4" style="height:7px;">
+			<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mb-4" style="height:7px;">
+			<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mb-4" style="height:7px;">
+			<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mb-4" style="height:7px;">
+			<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress" style="height:7px;">
+			<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Labels</h4>
+		</div>
+		<hr/>
+		<div class="progress">
+			<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Backgrounds</h4>
+		</div>
+		<hr/>
+		<div class="progress mb-3" style="height:7px;">
+			<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mb-3" style="height:7px;">
+			<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mb-3" style="height:7px;">
+			<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mb-3" style="height:7px;">
+			<div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Multiple bars</h4>
+		</div>
+		<hr/>
+		<div class="progress" style="height:7px;">
+			<div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+			<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+			<div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Striped</h4>
+		</div>
+		<hr/>
+		<div class="progress mb-3" style="height:7px;">
+			<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mb-3" style="height:7px;">
+			<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mb-3" style="height:7px;">
+			<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress mb-3" style="height:7px;">
+			<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress" style="height:7px;">
+			<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Animated stripes</h4>
+		</div>
+		<hr/>
+		<div class="progress" style="height:7px;">
+			<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+		</div>
+	</div>
+</div>

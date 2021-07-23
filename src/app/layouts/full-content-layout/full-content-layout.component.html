@@ -1,0 +1,11 @@
+<div class="wrapper" [ngClass]="{'toggled' : getSideBarState()}">
+    <app-navbar></app-navbar>
+        <app-sidebar></app-sidebar>
+        <div class="clearfix"></div>
+            <div class="content-wrapper">
+                <div class="container-fluid">
+                    <router-outlet></router-outlet>
+                    <div class="overlay" (click)="toggleSidebar()" [ngClass]="{'show' : getSideBarState()}"></div>
+                </div>
+            </div>
+</div>

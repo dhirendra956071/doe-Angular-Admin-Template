@@ -1,0 +1,136 @@
+<!--breadcrumb-->
+<div class="page-breadcrumb d-none d-md-flex align-items-center">
+	<div>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			  <li class="breadcrumb-item"><a href="#" (click)="$event.preventDefault()">Home</a></li>
+			  <li class="breadcrumb-item"><a href="#" (click)="$event.preventDefault()">Components</a></li>
+			  <li class="breadcrumb-item active" aria-current="page">Spinners</li>
+			</ol>
+		</nav>
+	</div>
+	<div class="ml-auto">
+		<div class="btn-group" ngbDropdown>
+			<button type="button" class="btn btn-sm btn-primary waves-effect" id="dropdownBasic1" ngbDropdownToggle>Settings <span class="sr-only">Toggle Dropdown</span></button>
+			<div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu-right dropdown-menu-lg-left"> 
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+				<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+				<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+				<div class="dropdown-divider"></div> 
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Separated link</a>
+			</div>
+		</div>
+	</div>
+</div>
+<h4 class="mb-4">Spinners</h4>
+<!--end breadcrumb-->
+<div class="card radius-15">
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Border spinner</h4>
+		</div>
+		<hr/>
+		<div class="spinner-border" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Border Color spinner</h4>
+		</div>
+		<hr/>
+		<div class="spinner-border text-primary mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-border text-secondary mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-border text-success mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-border text-danger mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-border text-warning mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-border text-info mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-border text-light mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-border text-dark mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Growing spinner</h4>
+		</div>
+		<hr/>
+		<div class="spinner-grow" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Growing Colors spinner</h4>
+		</div>
+		<hr/>
+		<div class="spinner-grow text-primary mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-secondary mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-success mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-danger mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-warning mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-info mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-light mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-dark mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Size</h4>
+		</div>
+		<hr/>
+		<div class="spinner-border spinner-border-sm mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow spinner-grow-sm mr-2" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<p class="my-4">use custom CSS or inline styles to change the dimensions as needed.</p>
+		<div class="spinner-border mr-2" style="width: 3rem; height: 3rem;" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow mr-2" style="width: 3rem; height: 3rem;" role="status">	<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="card-title">
+			<h4 class="mb-0">Spinners With Buttons</h4>
+		</div>
+		<hr/>
+		<button class="btn btn-primary mr-2" type="button" disabled>	<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>  <span class="sr-only">Loading...</span> 
+		</button>
+		<button class="btn btn-primary mr-2" type="button" disabled>	<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</button>
+		<button class="btn btn-primary mr-2" type="button" disabled>	<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>  <span class="sr-only">Loading...</span> 
+		</button>
+		<button class="btn btn-primary mr-2" type="button" disabled>	<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Loading...</button>
+		<hr/>
+		<button class="btn btn-info mr-2" type="button" disabled>	<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>  <span class="sr-only">Loading...</span> 
+		</button>
+		<button class="btn btn-info mr-2" type="button" disabled>	<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</button>
+		<button class="btn btn-info mr-2" type="button" disabled>	<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>  <span class="sr-only">Loading...</span> 
+		</button>
+		<button class="btn btn-info mr-2" type="button" disabled>	<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Loading...</button>
+		<hr/>
+		<button class="btn btn-danger mr-2" type="button" disabled>	<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>  <span class="sr-only">Loading...</span> 
+		</button>
+		<button class="btn btn-danger mr-2" type="button" disabled>	<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</button>
+		<button class="btn btn-danger mr-2" type="button" disabled>	<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>  <span class="sr-only">Loading...</span> 
+		</button>
+		<button class="btn btn-danger mr-2" type="button" disabled>	<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Loading...</button>
+		<hr/>
+		<button class="btn btn-success mr-2" type="button" disabled>	<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>  <span class="sr-only">Loading...</span> 
+		</button>
+		<button class="btn btn-success mr-2 mr-2" type="button" disabled>	<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</button>
+		<button class="btn btn-success mr-2" type="button" disabled>	<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>  <span class="sr-only">Loading...</span> 
+		</button>
+		<button class="btn btn-success mr-2" type="button" disabled>	<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Loading...</button>
+	</div>
+</div>

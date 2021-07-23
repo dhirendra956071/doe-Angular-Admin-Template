@@ -1,0 +1,12 @@
+.footer {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: $sidebar-width;
+    padding: 12px 30px;
+    background-color: $footer-background-color;
+    color: $footer-color;
+    text-align: center;
+    border-top: $footer-boder;
+    @include transition($transition-base);
+}

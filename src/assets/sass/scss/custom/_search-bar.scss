@@ -1,0 +1,170 @@
+.search-bar {
+    margin-left: $spacer * 1.5;
+    position: relative;
+    width: 300px;
+
+    a i {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+    }
+
+    input {
+        text-transform: capitalize;
+        padding: .375rem 2.0rem .375rem .75rem !important;
+        //background-color: $gray-100;
+    }
+    
+}
+
+// icon desin CSS
+.icon {
+    cursor: pointer;
+    box-shadow: 0 1px 5px #e3e7eb;
+    margin: 13px;
+    border-radius: 4px;
+    background: #f8f9fb;
+    transition: all .1s linear;
+}
+.icon:hover {
+    background: #eef1f7;
+}
+
+
+// box icon
+
+.icon-box {
+    padding: 10px 14px;
+    background: #ffffff;
+    box-shadow: 0 1px 5px #e3e7eb;
+}
+
+.pByfF {
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    display: inline-block;
+    flex: 0 0 10%;
+    transition: all 0.15s ease 0s;
+    border-radius: 8px;
+    overflow: hidden;
+    outline: none !important;
+    width: 122px;
+    height: 122px;
+    margin: 7px 7px;
+}
+
+.pByfF i {
+    font-size: 36px;
+}
+
+.pByfF .icon-box-inner {
+    font-weight: 700;
+    position: relative;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    pointer-events: none;
+    margin: 1px;
+    border-radius: 8px;
+    background: transparent;
+    padding: 18px 10px;
+}
+
+.pByfF .icon-box-inner .icon-box-name {
+    font-size: 12px;
+    text-transform: capitalize;
+    user-select: none;
+    color: #a5a5a5;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 15px;
+    overflow: hidden;
+    margin: 5px auto 2px;
+}
+
+.pByfF:hover {
+    background: #e2effd;
+}
+
+
+// Radius 
+
+
+.p-15 {
+
+	padding: 15px;
+
+}
+
+.font-small {
+
+	font-size: 50%;
+
+}
+
+.font-13 {
+
+	font-size: 13px;
+
+}
+
+.font-14 {
+
+	font-size: 14px;
+
+}
+
+.font-20 {
+
+	font-size: 20px;
+
+}
+
+.font-24 {
+
+	font-size: 24px;
+
+}
+
+.font-30 {
+
+	font-size: 30px;
+
+}
+
+.font-35 {
+
+	font-size: 35px;
+
+}
+
+.font-40 {
+
+	font-size: 40px;
+
+}
+
+.font-60 {
+
+	font-size: 60px;
+
+}
+
+.radius-10 {
+
+	border-radius: 10px;
+
+}
+
+.radius-15 {
+
+	border-radius: 15px;
+
+}
+
+.radius-30 {
+
+	border-radius: 30px;
+
+}
